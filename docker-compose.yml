@@ -1,21 +1,21 @@
  
 version: '2'
 services:
-  keydb1:
-    image: eqalpha/keydb
-    ports:
-      - 6371:6379
-    volumes:
-      - ./keydb1.conf:/etc/keydb/keydb.conf
+#   keydb1:
+#     image: eqalpha/keydb
+#     ports:
+#       - 6371:6379
+#     volumes:
+#       - ./keydb1.conf:/etc/keydb/keydb.conf
   keydb2:
     image: eqalpha/keydb
     ports:
-      - 6372:6379
+      - 6379:6379
     volumes:
-      - ./keydb3.conf:/etc/keydb/keydb.conf
-  keydb3:
-    image: eqalpha/keydb
-    ports:
-      - 6373:6379
-    volumes:
-      - ./keydb3.conf:/etc/keydb/keydb.conf
+      - ./keydb2.conf:/etc/keydb/keydb.conf
+#   keydb3:
+#     image: eqalpha/keydb
+#     ports:
+#       - 6373:6379
+#     volumes:
+#       - ./keydb3.conf:/etc/keydb/keydb.conf
